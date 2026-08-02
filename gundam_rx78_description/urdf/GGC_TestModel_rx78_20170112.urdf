@@ -29,7 +29,7 @@
     <parent link="base_link"/>
     <child link="rx78_Null_018_link"/>
     <limit effort="1000000000" lower="-0.261799387799" upper="0.261799387799" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_017_link">
     <inertial>
@@ -54,7 +54,7 @@
     <parent link="rx78_Null_018_link"/>
     <child link="rx78_Null_017_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_016_link">
     <inertial>
@@ -79,7 +79,7 @@
     <parent link="rx78_Null_017_link"/>
     <child link="rx78_Null_016_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_015_link">
     <inertial>
@@ -104,7 +104,7 @@
     <parent link="rx78_Null_016_link"/>
     <child link="rx78_Null_015_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_014_link">
     <inertial>
@@ -129,7 +129,7 @@
     <parent link="rx78_Null_015_link"/>
     <child link="rx78_Null_014_link"/>
     <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_013_link">
     <inertial>
@@ -240,7 +240,7 @@
     <parent link="rx78_Null_013_link"/>
     <child link="rx78_Null_005_addition_null0_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_005_link">
     <inertial>
@@ -265,7 +265,7 @@
     <parent link="rx78_Null_005_addition_null0_link"/>
     <child link="rx78_Null_005_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_006_addition_null0_link">
     <inertial>
@@ -286,7 +286,7 @@
     <parent link="rx78_Null_013_link"/>
     <child link="rx78_Null_006_addition_null0_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_006_link">
     <inertial>
@@ -311,7 +311,7 @@
     <parent link="rx78_Null_006_addition_null0_link"/>
     <child link="rx78_Null_006_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_004_link">
     <inertial>
@@ -336,7 +336,7 @@
     <parent link="rx78_Null_016_link"/>
     <child link="rx78_Null_004_link"/>
     <limit effort="1000000000" lower="-3.14159265359" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_001_link">
     <inertial>
@@ -361,7 +361,7 @@
     <parent link="rx78_Null_004_link"/>
     <child link="rx78_Null_001_link"/>
     <limit effort="1000000000" lower="-0.523598775598" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_002_link">
     <inertial>
@@ -386,7 +386,7 @@
     <parent link="rx78_Null_001_link"/>
     <child link="rx78_Null_002_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_003_link">
     <inertial>
@@ -411,7 +411,7 @@
     <parent link="rx78_Null_002_link"/>
     <child link="rx78_Null_003_link"/>
     <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_066_link">
     <inertial>
@@ -436,7 +436,7 @@
     <parent link="rx78_Null_003_link"/>
     <child link="rx78_Null_066_link"/>
     <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_067_link">
     <inertial>
@@ -461,7 +461,7 @@
     <parent link="rx78_Null_066_link"/>
     <child link="rx78_Null_067_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_069_link">
     <inertial>
@@ -486,7 +486,7 @@
     <parent link="rx78_Null_067_link"/>
     <child link="rx78_Null_069_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_068_link">
     <inertial>
@@ -511,7 +511,7 @@
     <parent link="rx78_Null_069_link"/>
     <child link="rx78_Null_068_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_070_link">
@@ -537,7 +537,7 @@
     <parent link="rx78_Null_068_link"/>
     <child link="rx78_Null_070_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_071_link">
@@ -563,7 +563,7 @@
     <parent link="rx78_Null_070_link"/>
     <child link="rx78_Null_071_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_072_link">
@@ -589,7 +589,7 @@
     <parent link="rx78_Null_069_link"/>
     <child link="rx78_Null_072_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_073_link">
@@ -615,7 +615,7 @@
     <parent link="rx78_Null_072_link"/>
     <child link="rx78_Null_073_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_074_link">
@@ -641,7 +641,7 @@
     <parent link="rx78_Null_073_link"/>
     <child link="rx78_Null_074_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_075_link">
@@ -667,7 +667,7 @@
     <parent link="rx78_Null_069_link"/>
     <child link="rx78_Null_075_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_076_link">
@@ -693,7 +693,7 @@
     <parent link="rx78_Null_075_link"/>
     <child link="rx78_Null_076_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_077_link">
@@ -719,7 +719,7 @@
     <parent link="rx78_Null_076_link"/>
     <child link="rx78_Null_077_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_059_link">
@@ -745,7 +745,7 @@
     <parent link="rx78_Null_069_link"/>
     <child link="rx78_Null_059_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_060_link">
@@ -771,7 +771,7 @@
     <parent link="rx78_Null_059_link"/>
     <child link="rx78_Null_060_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_061_link">
@@ -797,7 +797,7 @@
     <parent link="rx78_Null_060_link"/>
     <child link="rx78_Null_061_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_062_link">
@@ -823,7 +823,7 @@
     <parent link="rx78_Null_069_link"/>
     <child link="rx78_Null_062_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_063_link">
     <inertial>
@@ -848,7 +848,7 @@
     <parent link="rx78_Null_062_link"/>
     <child link="rx78_Null_063_link"/>
     <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0" offset="-0.785398163397"/>
   </joint>
   <link name="rx78_Null_064_link">
@@ -874,7 +874,7 @@
     <parent link="rx78_Null_063_link"/>
     <child link="rx78_Null_064_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="larm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_065_link"/>
@@ -928,7 +928,7 @@
     <parent link="rx78_Null_016_link"/>
     <child link="rx78_Null_049_link"/>
     <limit effort="1000000000" lower="-3.14159265359" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_050_link">
     <inertial>
@@ -953,7 +953,7 @@
     <parent link="rx78_Null_049_link"/>
     <child link="rx78_Null_050_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_051_link">
     <inertial>
@@ -978,7 +978,7 @@
     <parent link="rx78_Null_050_link"/>
     <child link="rx78_Null_051_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_052_link">
     <inertial>
@@ -1003,7 +1003,7 @@
     <parent link="rx78_Null_051_link"/>
     <child link="rx78_Null_052_link"/>
     <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_053_link">
     <inertial>
@@ -1028,7 +1028,7 @@
     <parent link="rx78_Null_052_link"/>
     <child link="rx78_Null_053_link"/>
     <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_054_link">
     <inertial>
@@ -1053,7 +1053,7 @@
     <parent link="rx78_Null_053_link"/>
     <child link="rx78_Null_054_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_055_link">
     <inertial>
@@ -1078,7 +1078,7 @@
     <parent link="rx78_Null_054_link"/>
     <child link="rx78_Null_055_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_056_link">
     <inertial>
@@ -1103,7 +1103,7 @@
     <parent link="rx78_Null_055_link"/>
     <child link="rx78_Null_056_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_057_link">
     <inertial>
@@ -1128,7 +1128,7 @@
     <parent link="rx78_Null_056_link"/>
     <child link="rx78_Null_057_link"/>
     <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0" offset="-0.785398163397"/>
   </joint>
   <link name="rx78_Null_058_link">
@@ -1154,7 +1154,7 @@
     <parent link="rx78_Null_057_link"/>
     <child link="rx78_Null_058_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_021_link">
@@ -1180,7 +1180,7 @@
     <parent link="rx78_Null_055_link"/>
     <child link="rx78_Null_021_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_022_link">
@@ -1206,7 +1206,7 @@
     <parent link="rx78_Null_021_link"/>
     <child link="rx78_Null_022_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_023_link">
@@ -1232,7 +1232,7 @@
     <parent link="rx78_Null_022_link"/>
     <child link="rx78_Null_023_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_024_link">
@@ -1258,7 +1258,7 @@
     <parent link="rx78_Null_055_link"/>
     <child link="rx78_Null_024_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_025_link">
@@ -1284,7 +1284,7 @@
     <parent link="rx78_Null_024_link"/>
     <child link="rx78_Null_025_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_026_link">
@@ -1310,7 +1310,7 @@
     <parent link="rx78_Null_025_link"/>
     <child link="rx78_Null_026_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_027_link">
@@ -1336,7 +1336,7 @@
     <parent link="rx78_Null_055_link"/>
     <child link="rx78_Null_027_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_028_link">
@@ -1362,7 +1362,7 @@
     <parent link="rx78_Null_027_link"/>
     <child link="rx78_Null_028_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_029_link">
@@ -1388,7 +1388,7 @@
     <parent link="rx78_Null_028_link"/>
     <child link="rx78_Null_029_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_078_link">
@@ -1414,7 +1414,7 @@
     <parent link="rx78_Null_055_link"/>
     <child link="rx78_Null_078_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_079_link">
@@ -1440,7 +1440,7 @@
     <parent link="rx78_Null_078_link"/>
     <child link="rx78_Null_079_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_080_link">
@@ -1466,7 +1466,7 @@
     <parent link="rx78_Null_079_link"/>
     <child link="rx78_Null_080_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rarm_gripper" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_081_link">
@@ -1542,7 +1542,7 @@
     <parent link="rx78_Null_083_link"/>
     <child link="rx78_Null_084_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rleg_crotch_p" multiplier="0.5"/>
   </joint>
   <link name="rx78_Null_031_link">
@@ -1568,7 +1568,7 @@
     <parent link="rx78_Null_083_link"/>
     <child link="rx78_Null_031_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rleg_crotch_p" multiplier="0.5"/>
   </joint>
   <link name="rx78_Null_032_link">
@@ -1594,7 +1594,7 @@
     <parent link="rx78_Null_083_link"/>
     <child link="rx78_Null_032_link"/>
     <limit effort="1000000000" lower="-0.471238898038" upper="0.209439510239" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rleg_crotch_r" multiplier="0.6"/>
   </joint>
   <link name="rx78_Null_033_link">
@@ -1620,7 +1620,7 @@
     <parent link="rx78_Null_083_link"/>
     <child link="rx78_Null_033_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="lleg_crotch_p" multiplier="0.5"/>
   </joint>
   <link name="rx78_Null_034_link">
@@ -1646,7 +1646,7 @@
     <parent link="rx78_Null_083_link"/>
     <child link="rx78_Null_034_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="lleg_crotch_p" multiplier="0.5"/>
   </joint>
   <link name="rx78_Null_047_link">
@@ -1672,7 +1672,7 @@
     <parent link="rx78_Null_083_link"/>
     <child link="rx78_Null_047_link"/>
     <limit effort="1000000000" lower="-0.471238898038" upper="0.209439510239" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="lleg_crotch_r" multiplier="-0.6"/>
   </joint>
   <link name="rx78_Null_035_addition_null0_link">
@@ -1694,7 +1694,7 @@
     <parent link="rx78_Null_083_link"/>
     <child link="rx78_Null_035_addition_null0_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_035_link">
     <inertial>
@@ -1719,7 +1719,7 @@
     <parent link="rx78_Null_035_addition_null0_link"/>
     <child link="rx78_Null_035_link"/>
     <limit effort="1000000000" lower="-0.349065850399" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_036_link">
     <inertial>
@@ -1744,7 +1744,7 @@
     <parent link="rx78_Null_035_link"/>
     <child link="rx78_Null_036_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_037_link">
     <inertial>
@@ -1769,7 +1769,7 @@
     <parent link="rx78_Null_036_link"/>
     <child link="rx78_Null_037_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_038_link">
     <inertial>
@@ -1794,7 +1794,7 @@
     <parent link="rx78_Null_037_link"/>
     <child link="rx78_Null_038_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_039_link">
     <inertial>
@@ -1819,7 +1819,7 @@
     <parent link="rx78_Null_038_link"/>
     <child link="rx78_Null_039_link"/>
     <limit effort="1000000000" lower="-1.0471975512" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_040_link">
     <inertial>
@@ -1844,7 +1844,7 @@
     <parent link="rx78_Null_039_link"/>
     <child link="rx78_Null_040_link"/>
     <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="lleg_ankle_r" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_041_link">
@@ -1870,7 +1870,7 @@
     <parent link="rx78_Null_039_link"/>
     <child link="rx78_Null_041_link"/>
     <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_042_link"/>
   <joint name="rx78_Null_042_joint" type="fixed">
@@ -1919,7 +1919,7 @@
     <parent link="rx78_Null_039_link"/>
     <child link="rx78_Null_046_link"/>
     <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="lleg_ankle_p" multiplier="-0.5"/>
   </joint>
   <link name="rx78_Null_085_addition_null0_link">
@@ -1941,7 +1941,7 @@
     <parent link="rx78_Null_083_link"/>
     <child link="rx78_Null_085_addition_null0_link"/>
     <limit effort="1000000000" lower="-1.57079632679" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_085_link">
     <inertial>
@@ -1966,7 +1966,7 @@
     <parent link="rx78_Null_085_addition_null0_link"/>
     <child link="rx78_Null_085_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.349065850399" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_086_link">
     <inertial>
@@ -1991,7 +1991,7 @@
     <parent link="rx78_Null_085_link"/>
     <child link="rx78_Null_086_link"/>
     <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_087_link">
     <inertial>
@@ -2016,7 +2016,7 @@
     <parent link="rx78_Null_086_link"/>
     <child link="rx78_Null_087_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_088_link">
     <inertial>
@@ -2041,7 +2041,7 @@
     <parent link="rx78_Null_087_link"/>
     <child link="rx78_Null_088_link"/>
     <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_089_link">
     <inertial>
@@ -2066,7 +2066,7 @@
     <parent link="rx78_Null_088_link"/>
     <child link="rx78_Null_089_link"/>
     <limit effort="1000000000" lower="-1.0471975512" upper="1.0471975512" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_090_link">
     <inertial>
@@ -2091,7 +2091,7 @@
     <parent link="rx78_Null_089_link"/>
     <child link="rx78_Null_090_link"/>
     <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rleg_ankle_r" multiplier="1.0"/>
   </joint>
   <link name="rx78_Null_091_link">
@@ -2117,7 +2117,7 @@
     <parent link="rx78_Null_089_link"/>
     <child link="rx78_Null_091_link"/>
     <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   <link name="rx78_Null_092_link"/>
   <joint name="rx78_Null_092_joint" type="fixed">
@@ -2166,7 +2166,7 @@
     <parent link="rx78_Null_089_link"/>
     <child link="rx78_Null_030_link"/>
     <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000"/>
-    <dynamics damping="3e2" friction="1e3"/>
+    <dynamics damping="0.0" friction="0.0"/>
     <mimic joint="rleg_ankle_p" multiplier="-0.5"/>
   </joint>
   <gazebo reference="torso_waist_y">
