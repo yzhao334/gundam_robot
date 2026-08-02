@@ -1,0 +1,4 @@
+*.usda
+*.pyc
+__pycache__/
+test_viewer.py
