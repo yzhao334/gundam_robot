@@ -335,7 +335,7 @@ def retrive_node(nodes, joints_dict, links_dict, parent=None):
                         j.limit = JointLimit(
                             lower=-math.pi / 2, upper=math.pi / 2, effort=1000000000, velocity=1000000)
                         j.dynamics = JointDynamics(
-                            damping='3e2', friction='1e3')
+                            damping='0.0', friction='0.0')
                         if 'joint_type' in joints_dict[node.id]:
                             j.joint_type = joints_dict[node.id]['joint_type']
                             if j.joint_type == 'fixed':
