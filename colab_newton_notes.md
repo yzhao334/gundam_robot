@@ -4,9 +4,12 @@ This guide explains how to use the provided Jupyter Notebook (`colab_newton_test
 
 Unlike Isaac Sim, Newton is lightweight and perfectly stable on basic Colab environments (like the free T4 GPU tier).
 
-## Prerequisites
-1. A Google account to access Google Colab and Google Drive.
-2. In Colab, go to **Runtime > Change runtime type** and ensure you have selected a **GPU** (e.g., T4). The Newton viewer requires it to efficiently calculate and render the simulation frames.
+## Updates for Proper Humanoid RL Dynamics
+The default Gundam URDF was not designed for dynamic physical simulation (it was rigidly anchored in the air with unscaled geometries and non-physical trajectory values). The notebook script now explicitly transforms the robot on-the-fly to be RL-ready:
+1. **Dynamic Floating Base**: The static `base_link` anchor is severed, making the pelvis the new physical floating root so it can fall and interact with gravity.
+2. **True Human Scale**: The robot and its masses/inertias are scaled down from an 18-meter anime mech to a physically realistic ~1.8-meter, ~80kg human scale.
+3. **PD Joint Control**: Instead of teleporting the joints magically (which breaks physics engines), the simulation now properly utilizes physical **Forward Dynamics**. The joints are controlled via Proportional-Derivative (PD) controllers that exert calculated physical torques to achieve the target CSV angles.
+4. **Unit Conversion**: The original CSV trajectory angles were mathematically converted from Degrees to Radians so the physics engine solves them correctly without instantly hitting joint limits.
 
 ## Steps to Run
 
@@ -23,13 +26,7 @@ Unlike Isaac Sim, Newton is lightweight and perfectly stable on basic Colab envi
    Run the third cell. This clones the Gundam robot repository and dynamically updates the URDF mesh path definitions so that Newton can find them on the Colab filesystem.
 
 5. **Run the Simulation & Render Video:**
-   Execute the final, largest cell. The script will:
-   - Start an Xvfb virtual display so OpenGL can render without a physical monitor.
-   - Build a Newton simulation model from the URDF file.
-   - Load the `walk-forward.csv` trajectory data and map its column headers to the Newton Joint Degrees of Freedom (DOFs).
-   - Initialize a `ViewerGL` renderer in headless mode.
-   - Step through the physics simulation while setting the joint target positions frame-by-frame.
-   - Capture the RGB array from the viewer into memory and write the final compiled video (`gundam_newton_motion.mp4`) to your Google Drive.
+   Execute the final, largest cell. The script will dynamically process the URDF into a physics-ready state, initialize the PD solver, load the `walk-forward.csv` trajectory data, step through the physics engine, and compile the final video (`gundam_humanoid_physics.mp4`) to your Google Drive.
 
 ## Retrieval
-Once the simulation completes, simply open your Google Drive and navigate to `/MyDrive/`. You will find `gundam_newton_motion.mp4` waiting there for you to download or watch directly in your browser.
+Once the simulation completes, simply open your Google Drive and navigate to `/MyDrive/`. You will find `gundam_humanoid_physics.mp4` waiting there for you to download or watch directly in your browser.

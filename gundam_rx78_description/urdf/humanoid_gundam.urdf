@@ -1,0 +1,4154 @@
+<robot name="GGC_TestModel_rx78_20170112">
+  <link name="rx78_Null_018_link">
+    <inertial>
+      <origin xyz="-1.8089530737600002e-10 0.005324006009760001 0.0628964848762" rpy="-0.0231766267228 4.2314211246e-08 -1.96224053535e-07" />
+      <mass value="0.9428742892580002" />
+      <inertia ixx="0.004348666176320001" ixy="0.0" ixz="0.0" iyy="0.007773873568200002" iyz="0.0" izz="0.008170324907350002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_084-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_084-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="torso_waist_y" type="revolute">
+    <origin xyz="1e-08 0.0 0.05" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_018_link" />
+    <limit effort="1000000000" lower="-0.261799387799" upper="0.261799387799" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_017_link">
+    <inertial>
+      <origin xyz="-1.5116628184200001e-05 0.0044414668265300005 0.0991438302585" rpy="3.11500705668 0.000138034696992 2.85273166442e-06" />
+      <mass value="1.2376299007300002" />
+      <inertia ixx="0.006570573714040002" ixy="0.0" ixz="0.0" iyy="0.012353844364800004" iyz="0.0" izz="0.013266038070000003" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_083-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_083-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="torso_waist_p" type="revolute">
+    <origin xyz="0.0 0.0 0.08000000000000002" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_018_link" />
+    <child link="rx78_Null_017_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_016_link">
+    <inertial>
+      <origin xyz="-0.00726424680619 -0.0038024843662300004 0.0930846884303" rpy="-0.607699488506 -0.0994779447075 0.00940129416869" />
+      <mass value="4.926494097780001" />
+      <inertia ixx="0.05020104948390001" ixy="0.0" ixz="0.0" iyy="0.06792826202480001" iyz="0.0" izz="0.07568647769840002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_080-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_080-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="torso_waist_p2" type="revolute">
+    <origin xyz="0.0 0.00028689000000000004 0.10775300000000002" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_017_link" />
+    <child link="rx78_Null_016_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_015_link">
+    <inertial>
+      <origin xyz="-0.000295920061547 -0.012879098808200002 0.06133712805700001" rpy="1.43311521698 -0.765253355958 1.75807956225" />
+      <mass value="0.17886113964700004" />
+      <inertia ixx="0.0003159396939410001" ixy="0.0" ixz="0.0" iyy="0.0003221704829950001" iyz="0.0" izz="0.00034408808687000006" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_008-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_008-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="head_neck_y" type="revolute">
+    <origin xyz="0.0 0.036632 0.14224699999999998" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="rx78_Null_016_link" />
+    <child link="rx78_Null_015_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_014_link">
+    <inertial>
+      <origin xyz="0.000169756419171 0.00023552376668699998 0.0827090393182" rpy="2.91191076245 -1.44318878177 -1.41358502465" />
+      <mass value="1.1144201977800003" />
+      <inertia ixx="0.0055534934845400015" ixy="0.0" ixz="0.0" iyy="0.005800747782990001" iyz="0.0" izz="0.0058833494270600015" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_011-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_011-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="head_neck_p" type="revolute">
+    <origin xyz="0.0 -0.0134118 0.0928577" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_015_link" />
+    <child link="rx78_Null_014_link" />
+    <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_013_link">
+    <inertial>
+      <origin xyz="0.17877870676700003 2.53845919233e-07 0.05879067575130001" rpy="-1.49162451874 3.81588883824e-07 1.57079778555" />
+      <mass value="1.5124848935400004" />
+      <inertia ixx="0.012641210945200003" ixy="0.0" ixz="0.0" iyy="0.014809935760300003" iyz="0.0" izz="0.023364579793600005" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_003-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_003-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rx78_Null_013_joint" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 1.57079532679" />
+    <parent link="rx78_Null_016_link" />
+    <child link="rx78_Null_013_link" />
+  </joint>
+  <link name="rx78_Null_012_link" />
+  <joint name="rx78_Null_012_joint" type="fixed">
+    <origin xyz="0.18471200000000002 -0.15585000000000002 0.194337" rpy="0.0 -0.0 -1.57079532679" />
+    <parent link="rx78_Null_013_link" />
+    <child link="rx78_Null_012_link" />
+  </joint>
+  <link name="rx78_Null_011_link" />
+  <joint name="rx78_Null_011_joint" type="fixed">
+    <origin xyz="5e-08 -2e-08 0.12322" rpy="0.0 -0.0 0.785398163397" />
+    <parent link="rx78_Null_012_link" />
+    <child link="rx78_Null_011_link" />
+  </joint>
+  <link name="rx78_Null_010_link">
+    <inertial>
+      <origin xyz="0.000161776379369 1.69039844016e-05 -0.0189386999037" rpy="-1.55866597776 -1.56924902496 -0.0191056860432" />
+      <mass value="0.05042677353080001" />
+      <inertia ixx="1.2760130904900002e-05" ixy="0.0" ixz="0.0" iyy="0.0002826547421940001" iyz="0.0" izz="0.00028265481858500004" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_007-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_007-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rx78_Null_010_joint" type="fixed">
+    <origin xyz="0.0 -1e-08 1.5000000000000002e-07" rpy="0.0 -0.0 0.0" />
+    <parent link="rx78_Null_011_link" />
+    <child link="rx78_Null_010_link" />
+  </joint>
+  <link name="rx78_Null_009_link" />
+  <joint name="rx78_Null_009_joint" type="fixed">
+    <origin xyz="0.18471300000000002 0.15585100000000002 0.194337" rpy="0.0 -0.0 -1.57079532679" />
+    <parent link="rx78_Null_013_link" />
+    <child link="rx78_Null_009_link" />
+  </joint>
+  <link name="rx78_Null_007_link" />
+  <joint name="rx78_Null_007_joint" type="fixed">
+    <origin xyz="-7e-08 4e-08 0.12322" rpy="0.0 -0.0 -0.785398163397" />
+    <parent link="rx78_Null_009_link" />
+    <child link="rx78_Null_007_link" />
+  </joint>
+  <link name="rx78_Null_008_link">
+    <inertial>
+      <origin xyz="7.72765510661e-06 1.99478688868e-05 -0.0189386743657" rpy="-0.841721523232 -1.57079502433 -0.759435924784" />
+      <mass value="0.05042671156660001" />
+      <inertia ixx="1.2760018199400003e-05" ixy="0.0" ixz="0.0" iyy="0.00028265469977900007" iyz="0.0" izz="0.00028265471405600006" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_006-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_006-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rx78_Null_008_joint" type="fixed">
+    <origin xyz="0.0 -3e-08 0.0" rpy="0.0 -0.0 0.0" />
+    <parent link="rx78_Null_007_link" />
+    <child link="rx78_Null_008_link" />
+  </joint>
+  <link name="rx78_Null_005_addition_null0_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <mass value="0.20480000000000007" />
+      <inertia ixx="0.00021845333333300005" ixy="0.0" ixz="0.0" iyy="0.00021845333333300005" iyz="0.0" izz="0.00021845333333300005" />
+    </inertial>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08000000000000002 0.08000000000000002 0.08000000000000002" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="torso_rthrust_p" type="revolute">
+    <origin xyz="0.209633 0.0644753 -0.0765126" rpy="0.0 -0.0 -1.57079532679" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_013_link" />
+    <child link="rx78_Null_005_addition_null0_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_005_link">
+    <inertial>
+      <origin xyz="-2.4898948666399998e-05 2.74838493809e-05 -0.04685199083950001" rpy="0.342346564952 -1.57076750978 -1.91314292085" />
+      <mass value="0.051716551419600014" />
+      <inertia ixx="3.769550632330001e-05" ixy="0.0" ixz="0.0" iyy="5.590358170310001e-05" iyz="0.0" izz="5.6818937528000014e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_005-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_005-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="torso_rthrust_r" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_005_addition_null0_link" />
+    <child link="rx78_Null_005_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_006_addition_null0_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <mass value="0.20480000000000007" />
+      <inertia ixx="0.00021845333333300005" ixy="0.0" ixz="0.0" iyy="0.00021845333333300005" iyz="0.0" izz="0.00021845333333300005" />
+    </inertial>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08000000000000002 0.08000000000000002 0.08000000000000002" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="torso_lthrust_p" type="revolute">
+    <origin xyz="0.209633 -0.0644748 -0.0765126" rpy="0.0 -0.0 -1.57079532679" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_013_link" />
+    <child link="rx78_Null_006_addition_null0_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_006_link">
+    <inertial>
+      <origin xyz="2.48379892666e-05 2.7483870576299998e-05 -0.0468519908846" rpy="-0.34336159314 -1.57076748184 -1.22743374025" />
+      <mass value="0.051716551588000016" />
+      <inertia ixx="3.769550659230001e-05" ixy="0.0" ixz="0.0" iyy="5.590358189070001e-05" iyz="0.0" izz="5.681893784560001e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_004-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_004-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="torso_lthrust_r" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_006_addition_null0_link" />
+    <child link="rx78_Null_006_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_004_link">
+    <inertial>
+      <origin xyz="0.0341759615815 -0.00220562051617 9.54991843459e-07" rpy="-0.00383508360084 -1.07108522052e-08 1.40070368306e-07" />
+      <mass value="0.07066894580510001" />
+      <inertia ixx="6.165748577450001e-05" ixy="0.0" ixz="0.0" iyy="9.501613750870002e-05" iyz="0.0" izz="9.501616003260003e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_063-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_063-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_shoulder_p" type="revolute">
+    <origin xyz="0.17200000000000001 0.0369688 0.10724700000000001" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_016_link" />
+    <child link="rx78_Null_004_link" />
+    <limit effort="1000000000" lower="-3.14159265359" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_001_link">
+    <inertial>
+      <origin xyz="0.0014415990459600001 -0.000124192654743 0.00277909385279" rpy="1.35401826289 0.937406918108 0.0310383238134" />
+      <mass value="0.3838477215330001" />
+      <inertia ixx="0.0007943655059200002" ixy="0.0" ixz="0.0" iyy="0.0008863469399050002" iyz="0.0" izz="0.0009786943584690004" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_001-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_001-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_shoulder_r" type="revolute">
+    <origin xyz="0.09300000000000001 -0.00191881 0.0" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_004_link" />
+    <child link="rx78_Null_001_link" />
+    <limit effort="1000000000" lower="-0.523598775598" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_002_link">
+    <inertial>
+      <origin xyz="-4.99261195306e-06 -0.00030844763332000006 -0.0724959207209" rpy="-1.56508502589 1.53267061853 -1.56538578941" />
+      <mass value="0.26716551072700007" />
+      <inertia ixx="0.0005354774986470001" ixy="0.0" ixz="0.0" iyy="0.0006578932439780001" iyz="0.0" izz="0.0007003196916880002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_002-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_002-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_shoulder_y" type="revolute">
+    <origin xyz="4e-08 0.0 -0.0604907" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="rx78_Null_001_link" />
+    <child link="rx78_Null_002_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_003_link">
+    <inertial>
+      <origin xyz="0.0005117473384869999 0.00432935876575 0.0012504245252700002" rpy="1.96137980272 -1.42267138919 -2.18134944725" />
+      <mass value="0.29983706272900007" />
+      <inertia ixx="0.00049444671955" ixy="0.0" ixz="0.0" iyy="0.0005361816115280002" iyz="0.0" izz="0.0005689846017780001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_062-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_062-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_elbow_p" type="revolute">
+    <origin xyz="-2e-08 3.09e-06 -0.15502400000000002" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_002_link" />
+    <child link="rx78_Null_003_link" />
+    <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_066_link">
+    <inertial>
+      <origin xyz="0.00010059234049100001 0.00043251903065100005 -0.137935389553" rpy="-0.0921351120103 -1.56893026006 0.119178150447" />
+      <mass value="0.7135634524730001" />
+      <inertia ixx="0.0015997068144700003" ixy="0.0" ixz="0.0" iyy="0.00391548345774" iyz="0.0" izz="0.004067096324190001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_064-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_064-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_elbow_p2" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="-9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_003_link" />
+    <child link="rx78_Null_066_link" />
+    <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_067_link">
+    <inertial>
+      <origin xyz="0.0063729131318500006 -5.49129312069e-05 -0.006675065781679999" rpy="1.57250508518 1.3652824771 0.00153963424253" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="1.3320061216400004e-05" ixy="0.0" ixz="0.0" iyy="2.217017713240001e-05" iyz="0.0" izz="2.3549500890800006e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_061-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_061-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_wrist_y" type="revolute">
+    <origin xyz="-8e-08 -3.0700000000000003e-06 -0.25148600000000004" rpy="0.0 9.99999997475e-07 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="rx78_Null_066_link" />
+    <child link="rx78_Null_067_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_069_link">
+    <inertial>
+      <origin xyz="-0.009219651857690001 0.00010679927699300001 -0.0365632777877" rpy="1.55541267479 -0.75656602586 1.59074154928" />
+      <mass value="0.059027289240400016" />
+      <inertia ixx="5.543651547250001e-05" ixy="0.0" ixz="0.0" iyy="5.793022996750002e-05" iyz="0.0" izz="8.552106786650003e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_060-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_060-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_wrist_r" type="revolute">
+    <origin xyz="0.0136895 -1e-08 -0.023974400000000003" rpy="9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_067_link" />
+    <child link="rx78_Null_069_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_068_link">
+    <inertial>
+      <origin xyz="-0.00110922897192 6.303815783930001e-05 -0.0121403679652" rpy="1.55815632948 1.48889465655 0.00612439029331" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.853256154150001e-06" ixy="0.0" ixz="0.0" iyy="5.459178479800001e-06" iyz="0.0" izz="5.8119362484000016e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_067-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_067-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_middle0_mimic" type="revolute">
+    <origin xyz="-0.006837840000000001 0.0310822 -0.07829660000000001" rpy="-9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_069_link" />
+    <child link="rx78_Null_068_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_070_link">
+    <inertial>
+      <origin xyz="0.0025424383351200005 -5.880648241210001e-08 -0.018318453849" rpy="-0.557131102339 -1.57079268417 2.1279182466" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.2242697431400012e-06" ixy="0.0" ixz="0.0" iyy="1.0516011887500003e-05" iyz="0.0" izz="1.1102918355300002e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_066-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_066-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_middle1_mimic" type="revolute">
+    <origin xyz="-0.00498726 -8e-08 -0.029534500000000005" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_068_link" />
+    <child link="rx78_Null_070_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_071_link">
+    <inertial>
+      <origin xyz="0.0037385306141200004 -2.26721840637e-08 -0.017509446352300003" rpy="-1.57088599529 -1.54962703686 9.60535197295e-05" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097171286400005e-06" ixy="0.0" ixz="0.0" iyy="6.172195843700002e-06" iyz="0.0" izz="6.473942302800002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_065-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_065-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_middle2_mimic" type="revolute">
+    <origin xyz="1e-07 2e-08 -0.0366374" rpy="-9.00000031809e-06 -4.99999987365e-06 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_070_link" />
+    <child link="rx78_Null_071_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_072_link">
+    <inertial>
+      <origin xyz="-0.00110922828006 6.30772215227e-05 -0.0121403660586" rpy="1.55815579991 1.48889557826 0.00611811197789" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.8532589768700008e-06" ixy="0.0" ixz="0.0" iyy="5.4591798128800005e-06" iyz="0.0" izz="5.811934464430001e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_070-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_070-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_ring0_mimic" type="revolute">
+    <origin xyz="-0.00683781 0.00989056 -0.0842841" rpy="-9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_069_link" />
+    <child link="rx78_Null_072_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_073_link">
+    <inertial>
+      <origin xyz="0.0025424866665900003 -8.11582940447e-08 -0.018318452896599998" rpy="-0.542959645179 -1.57079262809 2.11374270423" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.224270237860001e-06" ixy="0.0" ixz="0.0" iyy="1.0516013410500003e-05" iyz="0.0" izz="1.1102914612800002e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_069-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_069-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_ring1_mimic" type="revolute">
+    <origin xyz="-0.00498724 -7e-08 -0.029534500000000005" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_072_link" />
+    <child link="rx78_Null_073_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_074_link">
+    <inertial>
+      <origin xyz="0.00373852082779 -2.67240520792e-08 -0.017509512831800002" rpy="-1.57089195754 -1.54962703032 9.56077324422e-05" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097182940900006e-06" ixy="0.0" ixz="0.0" iyy="6.172199966700002e-06" iyz="0.0" izz="6.473942557230002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_068-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_068-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_ring2_mimic" type="revolute">
+    <origin xyz="1.5000000000000002e-07 1e-08 -0.0366374" rpy="-7.99999997963e-06 -4.99999987365e-06 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_073_link" />
+    <child link="rx78_Null_074_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_075_link">
+    <inertial>
+      <origin xyz="-0.0011091971913900001 6.3014985517e-05 -0.0121403666309" rpy="1.55815383555 1.48889480872 0.00612028991399" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.8532595270300007e-06" ixy="0.0" ixz="0.0" iyy="5.459176645680001e-06" iyz="0.0" izz="5.8119386583900015e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_053-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_053-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_little0_mimic" type="revolute">
+    <origin xyz="-0.00683781 -0.010563300000000001 -0.08771390000000001" rpy="-9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_069_link" />
+    <child link="rx78_Null_075_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_076_link">
+    <inertial>
+      <origin xyz="0.00254251617069 -7.238996471370001e-08 -0.018318442315500002" rpy="-0.626080973343 -1.57079251676 2.1968692888" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.2242719461200007e-06" ixy="0.0" ixz="0.0" iyy="1.0516009652000003e-05" iyz="0.0" izz="1.1102918794700004e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_052-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_052-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_little1_mimic" type="revolute">
+    <origin xyz="-0.00498724 -7e-08 -0.029534500000000005" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_075_link" />
+    <child link="rx78_Null_076_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_077_link">
+    <inertial>
+      <origin xyz="0.00373859112126 -5.33698315504e-08 -0.0175095145688" rpy="-1.57091281127 -1.5496297216 0.000122590732961" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097180711500005e-06" ixy="0.0" ixz="0.0" iyy="6.172196340580001e-06" iyz="0.0" izz="6.473943795770001e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_071-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_071-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_little2_mimic" type="revolute">
+    <origin xyz="1e-07 2e-08 -0.0366374" rpy="-6.00000021215e-06 -4.99999987365e-06 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_076_link" />
+    <child link="rx78_Null_077_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_059_link">
+    <inertial>
+      <origin xyz="-0.00110918509989 6.30320268856e-05 -0.0121403663375" rpy="1.55815884987 1.4888940348 0.00612161911496" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.853259767110001e-06" ixy="0.0" ixz="0.0" iyy="5.459176230990002e-06" iyz="0.0" izz="5.8119376756000015e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_056-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_056-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_index0_mimic" type="revolute">
+    <origin xyz="-0.006837790000000001 -0.031073000000000003 -0.0853204" rpy="-9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_069_link" />
+    <child link="rx78_Null_059_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_060_link">
+    <inertial>
+      <origin xyz="0.00254241426418 -9.5101421139e-08 -0.018318496019300003" rpy="0.22193897319 -1.57079131916 1.34884297607" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.2242749819100005e-06" ixy="0.0" ixz="0.0" iyy="1.0516011614100004e-05" iyz="0.0" izz="1.1102920889400004e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_055-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_055-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_index1_mimic" type="revolute">
+    <origin xyz="-0.00498724 -9e-08 -0.0295346" rpy="0.0 -9.99999997475e-07 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_059_link" />
+    <child link="rx78_Null_060_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_061_link">
+    <inertial>
+      <origin xyz="0.00373854289676 -3.680762380620001e-08 -0.0175097290045" rpy="-1.57069419884 1.54962987383 -3.14149471802" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097181500800004e-06" ixy="0.0" ixz="0.0" iyy="6.172195617070002e-06" iyz="0.0" izz="6.473943438740001e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_054-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_054-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_index2_mimic" type="revolute">
+    <origin xyz="1e-07 0.0 -0.0366374" rpy="-7.0000000959e-06 -4.99999987365e-06 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_060_link" />
+    <child link="rx78_Null_061_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_062_link">
+    <inertial>
+      <origin xyz="-1.3027391510800002e-06 -0.012129346220200002 -0.00045971189033700005" rpy="1.56843108118 -0.337788468633 1.56904194024" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="4.284939609920001e-06" ixy="0.0" ixz="0.0" iyy="8.483859613010002e-06" iyz="0.0" izz="9.362603803820002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_059-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_059-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper" type="revolute">
+    <origin xyz="-0.0265212 -0.0284142 -0.00825119" rpy="0.0 1.99999999495e-06 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_069_link" />
+    <child link="rx78_Null_062_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_063_link">
+    <inertial>
+      <origin xyz="-4.608840199620001e-06 -0.0025497764416900002 -0.0183123111681" rpy="0.512304698221 1.57079455531 0.512300208958" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.224265332620001e-06" ixy="0.0" ixz="0.0" iyy="1.0515948211200001e-05" iyz="0.0" izz="1.1102858070800001e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_058-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_058-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_thumb1_mimic" type="revolute">
+    <origin xyz="4e-08 -0.0248849 -0.0170409" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_062_link" />
+    <child link="rx78_Null_063_link" />
+    <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" offset="-0.785398163397" />
+  </joint>
+  <link name="rx78_Null_064_link">
+    <inertial>
+      <origin xyz="-4.65290834003e-06 -0.00374335664999 -0.0175089267918" rpy="1.57081492166 1.54962955498 1.57081696167" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.509717537050001e-06" ixy="0.0" ixz="0.0" iyy="6.172187068160001e-06" iyz="0.0" izz="6.473939446060001e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_057-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_057-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="larm_gripper_thumb2_mimic" type="revolute">
+    <origin xyz="1.7000000000000001e-07 -2.49e-06 -0.0366318" rpy="-9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_063_link" />
+    <child link="rx78_Null_064_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="larm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_065_link" />
+  <joint name="rx78_Null_065_joint" type="fixed">
+    <origin xyz="-4e-08 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <parent link="rx78_Null_066_link" />
+    <child link="rx78_Null_065_link" />
+  </joint>
+  <link name="rx78_Null_048_link">
+    <inertial>
+      <origin xyz="0.07577626150620001 -0.00028670084101499997 0.029798742369" rpy="3.14154428198 -0.858695371579 6.82204940369e-05" />
+      <mass value="1.0188889687400002" />
+      <inertia ixx="0.004254374486410001" ixy="0.0" ixz="0.0" iyy="0.004473907825950001" iyz="0.0" izz="0.005098429016210001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_045-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_045-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rx78_Null_048_joint" type="fixed">
+    <origin xyz="0.028000000000000004 -0.0019188 0.0" rpy="0.0 -0.0 0.0" />
+    <parent link="rx78_Null_004_link" />
+    <child link="rx78_Null_048_link" />
+  </joint>
+  <link name="rx78_Null_049_link">
+    <inertial>
+      <origin xyz="-0.0341759469554 -0.00028684290788600004 2.14474281231e-06" rpy="-0.000805253061973 6.083704851e-08 1.75257035591e-07" />
+      <mass value="0.07066894306440001" />
+      <inertia ixx="6.165747822090002e-05" ixy="0.0" ixz="0.0" iyy="9.501613696560002e-05" iyz="0.0" izz="9.501615815380002e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_078-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_078-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_shoulder_p" type="revolute">
+    <origin xyz="-0.17200000000000001 0.034999999999999996 0.107245" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_016_link" />
+    <child link="rx78_Null_049_link" />
+    <limit effort="1000000000" lower="-3.14159265359" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_050_link">
+    <inertial>
+      <origin xyz="-0.0031691298667200006 -0.000236679793645 0.0036931674137700003" rpy="1.5707989413 1.36931310995 3.52057973764e-06" />
+      <mass value="0.36819225087000007" />
+      <inertia ixx="0.0007878352256040002" ixy="0.0" ixz="0.0" iyy="0.0008331676875520003" iyz="0.0" izz="0.0009256811532620002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_046-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_046-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_shoulder_r" type="revolute">
+    <origin xyz="-0.09300000000000001 -4e-08 2.29e-06" rpy="0.0 1.99999999495e-06 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_049_link" />
+    <child link="rx78_Null_050_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_051_link">
+    <inertial>
+      <origin xyz="5.64790768457e-05 -0.00019526521402600002 -0.0716757097172" rpy="-1.68084860405 1.51629173751 -1.66754887886" />
+      <mass value="0.26377228703500005" />
+      <inertia ixx="0.0005312832438420001" ixy="0.0" ixz="0.0" iyy="0.0006416689934160001" iyz="0.0" izz="0.0006859418650600002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_077-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_077-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_shoulder_y" type="revolute">
+    <origin xyz="1e-07 -9e-08 -0.0604907" rpy="0.0 -1.99999999495e-06 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="rx78_Null_050_link" />
+    <child link="rx78_Null_051_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_052_link">
+    <inertial>
+      <origin xyz="-0.00034537425462500003 0.007107212658169999 0.00021651775285700002" rpy="1.30212539629 -1.31900697169 1.93765236648" />
+      <mass value="0.2830332510410001" />
+      <inertia ixx="0.00047907767165300015" ixy="0.0" ixz="0.0" iyy="0.0005135224462860001" iyz="0.0" izz="0.0005326987120520001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_076-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_076-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_elbow_p" type="revolute">
+    <origin xyz="6e-08 2.88e-06 -0.15502400000000002" rpy="-3.0000001061e-06 -9.99999997475e-07 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_051_link" />
+    <child link="rx78_Null_052_link" />
+    <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_053_link">
+    <inertial>
+      <origin xyz="-0.000275576910103 -0.00011034431869300001 -0.135789645655" rpy="0.923029235723 1.5571424345 -2.22133499466" />
+      <mass value="0.7060050681820002" />
+      <inertia ixx="0.0015990072951000004" ixy="0.0" ixz="0.0" iyy="0.004022996637900001" iyz="0.0" izz="0.004166344338410001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_075-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_075-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_elbow_p2" type="revolute">
+    <origin xyz="2e-08 0.0 0.0" rpy="1.99999999495e-06 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_052_link" />
+    <child link="rx78_Null_053_link" />
+    <limit effort="1000000000" lower="-1.0471975512" upper="0.1308996939" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_054_link">
+    <inertial>
+      <origin xyz="-0.006372878438800001 -3.47682587857e-06 -0.00667593333801" rpy="-1.57250911436 1.36528341468 3.14004951952" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="1.3320050761300002e-05" ixy="0.0" ixz="0.0" iyy="2.2170143139900004e-05" iyz="0.0" izz="2.3549446948400004e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_047-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_047-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_wrist_y" type="revolute">
+    <origin xyz="-1e-07 -3.74e-06 -0.25148600000000004" rpy="-9.99999997475e-07 -1.99999999495e-06 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="rx78_Null_053_link" />
+    <child link="rx78_Null_054_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_055_link">
+    <inertial>
+      <origin xyz="0.00921745487889 0.000158343270366 -0.0395640286388" rpy="1.58618213196 -0.756564122742 1.55085045194" />
+      <mass value="0.05902727266080002" />
+      <inertia ixx="5.5436496824500013e-05" ixy="0.0" ixz="0.0" iyy="5.793019203250002e-05" iyz="0.0" izz="8.552101533220002e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_048-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_048-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_wrist_r" type="revolute">
+    <origin xyz="-0.013688100000000002 -1e-08 -0.0209745" rpy="1.99999999495e-06 1.99999999495e-06 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_054_link" />
+    <child link="rx78_Null_055_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_056_link">
+    <inertial>
+      <origin xyz="1.30989542991e-06 -0.012129345234100001 -0.00045948056761500004" rpy="1.57316518734 -0.337785810697 1.57255010494" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="4.284937879690001e-06" ixy="0.0" ixz="0.0" iyy="8.483856739750002e-06" iyz="0.0" izz="9.362599160700002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_051-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_051-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper" type="revolute">
+    <origin xyz="0.026520000000000002 -0.0284142 -0.0112511" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_055_link" />
+    <child link="rx78_Null_056_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_057_link">
+    <inertial>
+      <origin xyz="4.66026768099e-06 -0.00254980798052 -0.0183122145539" rpy="-2.60331362051 -1.57079506749 -0.538288983058" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.2242674030400005e-06" ixy="0.0" ixz="0.0" iyy="1.0515950321300002e-05" iyz="0.0" izz="1.1102851380400004e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_050-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_050-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_thumb1_mimic" type="revolute">
+    <origin xyz="-6e-08 -0.024884800000000002 -0.0170409" rpy="-1.99999999495e-06 1.99999999495e-06 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_056_link" />
+    <child link="rx78_Null_057_link" />
+    <limit effort="1000000000" lower="-0.628318530718" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" offset="-0.785398163397" />
+  </joint>
+  <link name="rx78_Null_058_link">
+    <inertial>
+      <origin xyz="4.6167238092e-06 -0.00374345635809 -0.0175090186997" rpy="1.57096073188 1.54963305308 1.57096272179" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097159874400005e-06" ixy="0.0" ixz="0.0" iyy="6.172185323090002e-06" iyz="0.0" izz="6.4739312287900015e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_049-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_049-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_thumb2_mimic" type="revolute">
+    <origin xyz="4e-08 -2.5400000000000002e-06 -0.0366319" rpy="0.0 -1.99999999495e-06 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_057_link" />
+    <child link="rx78_Null_058_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_021_link">
+    <inertial>
+      <origin xyz="0.001105837616 6.29701941906e-05 -0.0121405072267" rpy="-1.55815208982 1.48889088527 3.13547753345" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.853256366690001e-06" ixy="0.0" ixz="0.0" iyy="5.459171632320001e-06" iyz="0.0" izz="5.8119328981100015e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_014-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_014-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_middle0_mimic" type="revolute">
+    <origin xyz="0.006840100000000001 -0.010563300000000001 -0.09071390000000001" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_055_link" />
+    <child link="rx78_Null_021_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_022_link">
+    <inertial>
+      <origin xyz="-0.00254249014477 -9.69275172196e-08 -0.0183183600739" rpy="-2.20036095392 -1.5707920767 0.629565330986" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.224257894640001e-06" ixy="0.0" ixz="0.0" iyy="1.0515982208600003e-05" iyz="0.0" izz="1.1102891133900002e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_013-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_013-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_middle1_mimic" type="revolute">
+    <origin xyz="0.00498394 -8e-08 -0.029534700000000004" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_021_link" />
+    <child link="rx78_Null_022_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_023_link">
+    <inertial>
+      <origin xyz="-0.0037385815476700004 -7.47106866241e-08 -0.017509549652199998" rpy="1.570910155 -1.549632787 3.14147541343" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097153082400004e-06" ixy="0.0" ixz="0.0" iyy="6.172187358810001e-06" iyz="0.0" izz="6.473933572320002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_012-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_012-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_middle2_mimic" type="revolute">
+    <origin xyz="-1.1e-07 -1.2e-07 -0.0366376" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_022_link" />
+    <child link="rx78_Null_023_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_024_link">
+    <inertial>
+      <origin xyz="0.00110581532824 6.2962567689e-05 -0.0121402969126" rpy="-1.55815154438 1.48889023113 3.13547843786" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.853258727220001e-06" ixy="0.0" ixz="0.0" iyy="5.4591729347400015e-06" iyz="0.0" izz="5.811934744060001e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_017-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_017-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_index0_mimic" type="revolute">
+    <origin xyz="0.006840110000000001 -0.0310731 -0.0883256" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_055_link" />
+    <child link="rx78_Null_024_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_025_link">
+    <inertial>
+      <origin xyz="-0.00254251027454 -7.38867229166e-08 -0.0183185393552" rpy="-2.1885058243 -1.57079193482 0.617713340664" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.2242632456000006e-06" ixy="0.0" ixz="0.0" iyy="1.0515982803100003e-05" iyz="0.0" izz="1.1102899110700002e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_016-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_016-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_index1_mimic" type="revolute">
+    <origin xyz="0.00498386 -9e-08 -0.029534700000000004" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_024_link" />
+    <child link="rx78_Null_025_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_026_link">
+    <inertial>
+      <origin xyz="-0.0037386389539600003 -5.46007794272e-08 -0.0175096332328" rpy="1.57066187528 1.5496317769 -0.00013008681642" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097194321200005e-06" ixy="0.0" ixz="0.0" iyy="6.172191261500001e-06" iyz="0.0" izz="6.473941964420002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_015-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_015-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_index2_mimic" type="revolute">
+    <origin xyz="-1.3e-07 -1e-07 -0.0366376" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_025_link" />
+    <child link="rx78_Null_026_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_027_link">
+    <inertial>
+      <origin xyz="0.00110578616033 6.29839343694e-05 -0.012140392363200001" rpy="-1.55814957571 1.48889068999 3.13547417851" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.853256068690001e-06" ixy="0.0" ixz="0.0" iyy="5.459170887530002e-06" iyz="0.0" izz="5.811930229570002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_020-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_020-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_little0_mimic" type="revolute">
+    <origin xyz="0.00684013 0.0310821 -0.08129650000000001" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_055_link" />
+    <child link="rx78_Null_027_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_028_link">
+    <inertial>
+      <origin xyz="-0.00254246032354 -1.02561798099e-07 -0.0183183234988" rpy="-0.893658831543 1.57079184538 -2.46445658322" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.2242599910000013e-06" ixy="0.0" ixz="0.0" iyy="1.0515981022000004e-05" iyz="0.0" izz="1.1102894912500004e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_019-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_019-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_little1_mimic" type="revolute">
+    <origin xyz="0.00498386 -8e-08 -0.029534700000000004" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_027_link" />
+    <child link="rx78_Null_028_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_029_link">
+    <inertial>
+      <origin xyz="-0.00373859989755 -2.58753470556e-08 -0.0175095659068" rpy="1.57091259012 -1.54963275324 3.14146813471" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097176679100002e-06" ixy="0.0" ixz="0.0" iyy="6.172187020750001e-06" iyz="0.0" izz="6.473934178620002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_018-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_018-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_little2_mimic" type="revolute">
+    <origin xyz="-1e-07 -1.1e-07 -0.0366376" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_028_link" />
+    <child link="rx78_Null_029_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_078_link">
+    <inertial>
+      <origin xyz="0.00110580856946 6.30036216991e-05 -0.012140419170100001" rpy="-1.55815828146 1.48889040458 3.13548168598" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.853255938550001e-06" ixy="0.0" ixz="0.0" iyy="5.459171674770002e-06" iyz="0.0" izz="5.811930551410001e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_074-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_074-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_ring0_mimic" type="revolute">
+    <origin xyz="0.006840150000000001 0.009890500000000002 -0.0872841" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_055_link" />
+    <child link="rx78_Null_078_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_079_link">
+    <inertial>
+      <origin xyz="-0.0025425647930100003 -1.11178553666e-07 -0.018318414877200002" rpy="-2.19452392856 -1.57079196371 0.623735417599" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="3.224263777490001e-06" ixy="0.0" ixz="0.0" iyy="1.0515978113100002e-05" iyz="0.0" izz="1.1102892925100003e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_073-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_073-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_ring1_mimic" type="revolute">
+    <origin xyz="0.00498388 -9e-08 -0.029534700000000004" rpy="-9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_078_link" />
+    <child link="rx78_Null_079_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_080_link">
+    <inertial>
+      <origin xyz="-0.00373865496779 -6.52731251122e-08 -0.017509668832799998" rpy="1.57068315575 1.54963299736 -0.000112486955871" />
+      <mass value="0.05000000000000001" />
+      <inertia ixx="2.5097180796300006e-06" ixy="0.0" ixz="0.0" iyy="6.172191813440001e-06" iyz="0.0" izz="6.473938686760002e-06" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_072-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_072-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rarm_gripper_ring2_mimic" type="revolute">
+    <origin xyz="-1.1e-07 -1e-07 -0.0366376" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_079_link" />
+    <child link="rx78_Null_080_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.57079632679" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rarm_gripper" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_081_link">
+    <inertial>
+      <origin xyz="-0.0779971464671 0.000259695623861 0.031018420690400002" rpy="-0.611284672866 -0.60118272567 -2.2702328905" />
+      <mass value="0.6646729054390002" />
+      <inertia ixx="0.003162406082140001" ixy="0.0" ixz="0.0" iyy="0.0031976836406100006" iyz="0.0" izz="0.0037988762082200008" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_079-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_079-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rx78_Null_081_joint" type="fixed">
+    <origin xyz="-0.0279999 -4e-08 3.05e-06" rpy="-3.0000001061e-06 -0.0 0.0" />
+    <parent link="rx78_Null_049_link" />
+    <child link="rx78_Null_081_link" />
+  </joint>
+  <link name="rx78_Null_082_link" />
+  <joint name="rx78_Null_082_joint" type="fixed">
+    <origin xyz="-5e-08 -0.13028700000000001 -0.0837529" rpy="0.0349060820064 -0.0 0.0" />
+    <parent link="rx78_Null_016_link" />
+    <child link="rx78_Null_082_link" />
+  </joint>
+  <link name="rx78_Null_083_link">
+    <inertial>
+      <origin xyz="0.000465368143716 -0.00303856495598 -0.0284001144339" rpy="1.58201312706 0.047470470209 -1.56977052882" />
+      <mass value="1.4674323404800003" />
+      <inertia ixx="0.011024859312500003" ixy="0.0" ixz="0.0" iyy="0.019518697817200004" iyz="0.0" izz="0.024299428328300007" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_044-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_044-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="rx78_Null_084_link">
+    <inertial>
+      <origin xyz="-0.0451486735878 -0.0232703353033 -0.0681505055795" rpy="1.43719365047 1.40508022813 -0.110554559796" />
+      <mass value="0.16491388565700005" />
+      <inertia ixx="0.0003455401669300001" ixy="0.0" ixz="0.0" iyy="0.0004876002119890001" iyz="0.0" izz="0.0007474229335500002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_085-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_085-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_crotch_p_front_mimic" type="revolute">
+    <origin xyz="-0.07600000000000001 -0.109713 0.046996100000000006" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_084_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rleg_crotch_p" multiplier="0.5" />
+  </joint>
+  <link name="rx78_Null_031_link">
+    <inertial>
+      <origin xyz="-0.043151187724000006 0.025300767852500003 -0.0681617729826" rpy="1.43747196906 -1.40542884503 -3.03124447499" />
+      <mass value="0.16494426265200002" />
+      <inertia ixx="0.00034559374623900006" ixy="0.0" ixz="0.0" iyy="0.0004876468845370002" iyz="0.0" izz="0.0007474844504520002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_025-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_025-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_crotch_p_back_mimic" type="revolute">
+    <origin xyz="-0.07600000000000001 0.11028700000000001 0.0470002" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_031_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rleg_crotch_p" multiplier="0.5" />
+  </joint>
+  <link name="rx78_Null_032_link">
+    <inertial>
+      <origin xyz="-0.022393887551 -0.00028688023061200003 -0.0491257256755" rpy="-4.80069702412e-07 1.50313514013 -8.14080038208e-07" />
+      <mass value="0.22526872775100004" />
+      <inertia ixx="0.0005327791297930001" ixy="0.0" ixz="0.0" iyy="0.0008245237736570002" iyz="0.0" izz="0.0012419268681400004" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_026-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_026-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_crotch_r_mimic" type="revolute">
+    <origin xyz="-0.182901 0.00028688 0.0398817" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_032_link" />
+    <limit effort="1000000000" lower="-0.471238898038" upper="0.209439510239" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rleg_crotch_r" multiplier="0.6" />
+  </joint>
+  <link name="rx78_Null_033_link">
+    <inertial>
+      <origin xyz="0.043151207586 0.025300758170100003 -0.0681617755843" rpy="-1.43747369011 -1.4054287784 -0.110346161674" />
+      <mass value="0.16494428947500003" />
+      <inertia ixx="0.0003455938203980001" ixy="0.0" ixz="0.0" iyy="0.0004876469329920001" iyz="0.0" izz="0.0007474845401350002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_027-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_027-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_crotch_p_back_mimic" type="revolute">
+    <origin xyz="0.07600000000000001 0.11028700000000001 0.0470002" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_033_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="lleg_crotch_p" multiplier="0.5" />
+  </joint>
+  <link name="rx78_Null_034_link">
+    <inertial>
+      <origin xyz="0.045151218201500004 -0.023274532148 -0.0681620810725" rpy="-1.43747477266 1.40542875243 -3.03124695517" />
+      <mass value="0.16494427124700003" />
+      <inertia ixx="0.00034559378548800005" ixy="0.0" ixz="0.0" iyy="0.00048764689364200013" iyz="0.0" izz="0.0007474844409740001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_028-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_028-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_crotch_p_front_mimic" type="revolute">
+    <origin xyz="0.07600000000000001 -0.109713 0.0470002" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_034_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="lleg_crotch_p" multiplier="0.5" />
+  </joint>
+  <link name="rx78_Null_047_link">
+    <inertial>
+      <origin xyz="0.022393911258 -0.000286868105768 -0.04912572596920001" rpy="3.14159261997 1.5031351592 -3.14159221828" />
+      <mass value="0.22526873679700005" />
+      <inertia ixx="0.0005327791635100002" ixy="0.0" ixz="0.0" iyy="0.0008245237766010002" iyz="0.0" izz="0.0012419268850700003" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_043-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_043-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_crotch_r_mimic" type="revolute">
+    <origin xyz="0.182901 0.00028688 0.0398817" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_047_link" />
+    <limit effort="1000000000" lower="-0.471238898038" upper="0.209439510239" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="lleg_crotch_r" multiplier="-0.6" />
+  </joint>
+  <link name="rx78_Null_035_addition_null0_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <mass value="0.20480000000000007" />
+      <inertia ixx="0.00021845333333300005" ixy="0.0" ixz="0.0" iyy="0.00021845333333300005" iyz="0.0" izz="0.00021845333333300005" />
+    </inertial>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08000000000000002 0.08000000000000002 0.08000000000000002" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_crotch_p" type="revolute">
+    <origin xyz="0.11499999999999999 0.0 -0.053548399999999996" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_035_addition_null0_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.0471975512" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_035_link">
+    <inertial>
+      <origin xyz="0.00135019144334 2.68670539385e-09 -0.007576144120250001" rpy="2.55979362589e-06 1.3842209329 2.67360360654e-06" />
+      <mass value="0.2826368379590001" />
+      <inertia ixx="0.0007375352300290002" ixy="0.0" ixz="0.0" iyy="0.0007848054628520003" iyz="0.0" izz="0.0008267859221050002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_029-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_029-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_crotch_r" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_035_addition_null0_link" />
+    <child link="rx78_Null_035_link" />
+    <limit effort="1000000000" lower="-0.349065850399" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_036_link">
+    <inertial>
+      <origin xyz="-0.000207627232164 0.00020425513993300003 -0.131863673939" rpy="1.63965095087 1.56807010045 1.64122862329" />
+      <mass value="1.3734577470800002" />
+      <inertia ixx="0.004486658785820001" ixy="0.0" ixz="0.0" iyy="0.011157313408000002" iyz="0.0" izz="0.011693709861000002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_042-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_042-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_crotch_y" type="revolute">
+    <origin xyz="-1e-08 0.0 -0.0684516" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="rx78_Null_035_link" />
+    <child link="rx78_Null_036_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_037_link">
+    <inertial>
+      <origin xyz="-4.5423937806300006e-08 -0.027348107568800004 -0.040599844847500004" rpy="1.57079664461 1.29800693337 1.57079676387" />
+      <mass value="0.5361386332740001" />
+      <inertia ixx="0.0013831471175700003" ixy="0.0" ixz="0.0" iyy="0.0014622434522800004" iyz="0.0" izz="0.0017877376383700003" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_041-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_041-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_knee_p" type="revolute">
+    <origin xyz="0.0 0.0423796 -0.271182" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_036_link" />
+    <child link="rx78_Null_037_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_038_link">
+    <inertial>
+      <origin xyz="-0.000305121767144 -0.0207919386347 -0.277167128322" rpy="-1.54932008157 -1.49182608357 -1.58283392671" />
+      <mass value="5.927780104480001" />
+      <inertia ixx="0.03211759772500001" ixy="0.0" ixz="0.0" iyy="0.19309590571100005" iyz="0.0" izz="0.20334857548400004" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_030-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_030-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_knee_p2" type="revolute">
+    <origin xyz="-3e-08 -0.0162996 -0.0408183" rpy="-9.99999997475e-07 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_037_link" />
+    <child link="rx78_Null_038_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_039_link">
+    <inertial>
+      <origin xyz="-1.10347495383e-07 -0.0350898790503 -0.035127002832100004" rpy="1.57079502761 -0.226744998929 1.57079613506" />
+      <mass value="0.3903954127000001" />
+      <inertia ixx="0.0009766212890470003" ixy="0.0" ixz="0.0" iyy="0.0020901397560400005" iyz="0.0" izz="0.0020967538702900005" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_040-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_040-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_ankle_p" type="revolute">
+    <origin xyz="2.8e-07 0.0221803 -0.602553" rpy="0.0 1.99999999495e-06 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_038_link" />
+    <child link="rx78_Null_039_link" />
+    <limit effort="1000000000" lower="-1.0471975512" upper="1.0471975512" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_040_link">
+    <inertial>
+      <origin xyz="0.0299423753427 0.00120209966573 -0.0266363524064" rpy="-2.69339193574 -0.0202631114009 1.57202960626" />
+      <mass value="0.3286518607370001" />
+      <inertia ixx="0.0009113475299380003" ixy="0.0" ixz="0.0" iyy="0.0013661804619400002" iyz="0.0" izz="0.0016042853648900006" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_032-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_032-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_ankle_r_mimic" type="revolute">
+    <origin xyz="1.9e-07 -6e-08 -0.0716289" rpy="0.0 -0.0 1.57079632679" />
+    <axis xyz="-1 0 0" />
+    <parent link="rx78_Null_039_link" />
+    <child link="rx78_Null_040_link" />
+    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="lleg_ankle_r" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_041_link">
+    <inertial>
+      <origin xyz="-0.025505132006 6.25745095782e-05 -0.0128349458313" rpy="-3.13340080113 0.225072169641 0.0138419268414" />
+      <mass value="0.9173869683910002" />
+      <inertia ixx="0.003801118570760001" ixy="0.0" ixz="0.0" iyy="0.0068655517756700014" iyz="0.0" izz="0.008649516856150003" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_034-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_034-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_ankle_r" type="revolute">
+    <origin xyz="2.5000000000000004e-07 -0.144559 -0.0716288" rpy="0.0 -0.0 1.57079632679" />
+    <axis xyz="-1 0 0" />
+    <parent link="rx78_Null_039_link" />
+    <child link="rx78_Null_041_link" />
+    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_042_link" />
+  <joint name="rx78_Null_042_joint" type="fixed">
+    <origin xyz="-0.130974 0.0373955 -0.053872500000000004" rpy="3.14159265359 9.99999997475e-07 -1.57079632679" />
+    <parent link="rx78_Null_041_link" />
+    <child link="rx78_Null_042_link" />
+  </joint>
+  <link name="rx78_Null_043_link" />
+  <joint name="rx78_Null_043_joint" type="fixed">
+    <origin xyz="-0.130974 -0.037403700000000005 -0.053872500000000004" rpy="3.14159265359 9.99999997475e-07 -1.57079632679" />
+    <parent link="rx78_Null_041_link" />
+    <child link="rx78_Null_043_link" />
+  </joint>
+  <link name="rx78_Null_044_link" />
+  <joint name="rx78_Null_044_joint" type="fixed">
+    <origin xyz="0.057326100000000005 0.0801901 -0.0602815" rpy="0.0 9.99999997475e-07 -1.57079632679" />
+    <parent link="rx78_Null_041_link" />
+    <child link="rx78_Null_044_link" />
+  </joint>
+  <link name="rx78_Null_045_link" />
+  <joint name="rx78_Null_045_joint" type="fixed">
+    <origin xyz="0.057326 -0.08018990000000001 -0.060281600000000005" rpy="0.0 9.99999997475e-07 -1.57079632679" />
+    <parent link="rx78_Null_041_link" />
+    <child link="rx78_Null_045_link" />
+  </joint>
+  <link name="rx78_Null_046_link">
+    <inertial>
+      <origin xyz="2.82212055625e-06 -0.0737319618093 0.0173155485748" rpy="-3.14150846626 0.237244874889 1.57143681594" />
+      <mass value="0.7733571035090002" />
+      <inertia ixx="0.003804804149820001" ixy="0.0" ixz="0.0" iyy="0.004011526114400001" iyz="0.0" izz="0.0062526698806000015" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_039-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_039-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="lleg_ankle_p_mimic" type="revolute">
+    <origin xyz="1e-08 -1e-08 0.0" rpy="0.0 -9.99999997475e-07 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_039_link" />
+    <child link="rx78_Null_046_link" />
+    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="lleg_ankle_p" multiplier="-0.5" />
+  </joint>
+  <link name="rx78_Null_085_addition_null0_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <mass value="0.20480000000000007" />
+      <inertia ixx="0.00021845333333300005" ixy="0.0" ixz="0.0" iyy="0.00021845333333300005" iyz="0.0" izz="0.00021845333333300005" />
+    </inertial>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.08000000000000002 0.08000000000000002 0.08000000000000002" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_crotch_p" type="revolute">
+    <origin xyz="-0.11499999999999999 1e-08 -0.053548399999999996" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_083_link" />
+    <child link="rx78_Null_085_addition_null0_link" />
+    <limit effort="1000000000" lower="-1.57079632679" upper="1.0471975512" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_085_link">
+    <inertial>
+      <origin xyz="-0.0013515320905200003 2.64767762102e-07 -0.007576873362660001" rpy="3.14098251543 1.38399750739 3.14105439268" />
+      <mass value="0.28264330076000005" />
+      <inertia ixx="0.0007375639790160001" ixy="0.0" ixz="0.0" iyy="0.0007848479788970002" iyz="0.0" izz="0.0008268231436810001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_086-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_086-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_crotch_r" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 -1 0" />
+    <parent link="rx78_Null_085_addition_null0_link" />
+    <child link="rx78_Null_085_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.349065850399" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_086_link">
+    <inertial>
+      <origin xyz="0.00020390114656500003 -0.000515317215416 -0.131974901174" rpy="-1.80118872878 1.55184586602 1.37327285919" />
+      <mass value="1.4015034554000003" />
+      <inertia ixx="0.004545366069940001" ixy="0.0" ixz="0.0" iyy="0.011230305839000003" iyz="0.0" izz="0.011849450843800003" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_024-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_024-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_crotch_y" type="revolute">
+    <origin xyz="0.0 0.0 -0.0684517" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="rx78_Null_085_link" />
+    <child link="rx78_Null_086_link" />
+    <limit effort="1000000000" lower="-0.785398163397" upper="0.785398163397" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_087_link">
+    <inertial>
+      <origin xyz="0.0007385576338690001 -0.026562501611900005 -0.0455509592631" rpy="1.41304149865 -0.794894894003 -1.4943966775" />
+      <mass value="0.4603919647320001" />
+      <inertia ixx="0.0012345036868700002" ixy="0.0" ixz="0.0" iyy="0.0013156943858200004" iyz="0.0" izz="0.0015240246048000004" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_023-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_023-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_knee_p" type="revolute">
+    <origin xyz="1e-08 0.0423796 -0.271182" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_086_link" />
+    <child link="rx78_Null_087_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_088_link">
+    <inertial>
+      <origin xyz="-0.0032002427935000004 -0.022012777264700002 -0.26567464422299997" rpy="1.82217474623 1.50400093429 1.86096188398" />
+      <mass value="5.351785671250001" />
+      <inertia ixx="0.03017421982570001" ixy="0.0" ixz="0.0" iyy="0.17440628678900005" iyz="0.0" izz="0.18453515755400005" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_087-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_087-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_knee_p2" type="revolute">
+    <origin xyz="-4.01e-06 -0.0162996 -0.0408183" rpy="0.0 -0.0 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_087_link" />
+    <child link="rx78_Null_088_link" />
+    <limit effort="1000000000" lower="-0.1308996939" upper="1.0471975512" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_089_link">
+    <inertial>
+      <origin xyz="3.06450046463e-05 -0.0350349044926 -0.0351267831403" rpy="1.57079068871 -0.227386769262 1.57079507041" />
+      <mass value="0.7807908539750001" />
+      <inertia ixx="0.0019561157423800004" ixy="0.0" ixz="0.0" iyy="0.0041738377474200014" iyz="0.0" izz="0.004183850732690001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_022-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_022-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_ankle_p" type="revolute">
+    <origin xyz="-3.01e-05 0.022180400000000003 -0.602553" rpy="0.0 9.99999997475e-07 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_088_link" />
+    <child link="rx78_Null_089_link" />
+    <limit effort="1000000000" lower="-1.0471975512" upper="1.0471975512" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_090_link">
+    <inertial>
+      <origin xyz="0.031418367597300004 -3.0684941641900006e-05 -0.0247403252761" rpy="2.71210529049 -5.83214996164e-06 -1.57077282755" />
+      <mass value="0.31210248290600007" />
+      <inertia ixx="0.0008507847091370003" ixy="0.0" ixz="0.0" iyy="0.0012940090888400003" iyz="0.0" izz="0.0014964435707600005" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_089-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_089-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_ankle_r_mimic" type="revolute">
+    <origin xyz="2.99e-06 -5e-08 -0.0716289" rpy="3.0000001061e-06 -0.0 1.5707763268" />
+    <axis xyz="-1 0 0" />
+    <parent link="rx78_Null_089_link" />
+    <child link="rx78_Null_090_link" />
+    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rleg_ankle_r" multiplier="1.0" />
+  </joint>
+  <link name="rx78_Null_091_link">
+    <inertial>
+      <origin xyz="-0.031274668051700004 0.000670553840076 -0.0158160608584" rpy="-3.12123810968 0.240489342154 0.0203922129746" />
+      <mass value="1.0039317728700003" />
+      <inertia ixx="0.0041084940638100005" ixy="0.0" ixz="0.0" iyy="0.007767842050010002" iyz="0.0" izz="0.009825975405180001" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_091-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_091-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_ankle_r" type="revolute">
+    <origin xyz="0.00011439000000000001 -0.14456100000000002 -0.0716286" rpy="4.99999987365e-06 -0.0 1.5707753268" />
+    <axis xyz="-1 0 0" />
+    <parent link="rx78_Null_089_link" />
+    <child link="rx78_Null_091_link" />
+    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+  </joint>
+  <link name="rx78_Null_092_link" />
+  <joint name="rx78_Null_092_joint" type="fixed">
+    <origin xyz="-0.130973 0.0374846 -0.0538731" rpy="-3.14159165359 -3.999999989e-06 -1.5707753268" />
+    <parent link="rx78_Null_091_link" />
+    <child link="rx78_Null_092_link" />
+  </joint>
+  <link name="rx78_Null_093_link" />
+  <joint name="rx78_Null_093_joint" type="fixed">
+    <origin xyz="-0.130971 -0.0373144 -0.053872699999999996" rpy="-3.14159165359 -3.999999989e-06 -1.5707753268" />
+    <parent link="rx78_Null_091_link" />
+    <child link="rx78_Null_093_link" />
+  </joint>
+  <link name="rx78_Null_094_link" />
+  <joint name="rx78_Null_094_joint" type="fixed">
+    <origin xyz="0.057326100000000005 0.08027450000000001 -0.060282100000000005" rpy="9.99999997475e-07 -3.999999989e-06 -1.5707753268" />
+    <parent link="rx78_Null_091_link" />
+    <child link="rx78_Null_094_link" />
+  </joint>
+  <link name="rx78_Null_095_link" />
+  <joint name="rx78_Null_095_joint" type="fixed">
+    <origin xyz="0.057329500000000005 -0.0801055 -0.0602814" rpy="9.99999997475e-07 -3.999999989e-06 -1.5707753268" />
+    <parent link="rx78_Null_091_link" />
+    <child link="rx78_Null_095_link" />
+  </joint>
+  <link name="rx78_Null_030_link">
+    <inertial>
+      <origin xyz="3.0194695462400003e-05 -0.0736498802212 0.017315362975099998" rpy="3.14157717957 -0.237664673071 -1.57091308803" />
+      <mass value="0.7733991533620002" />
+      <inertia ixx="0.003811557615720001" ixy="0.0" ixz="0.0" iyy="0.004004747522770001" iyz="0.0" izz="0.006252841407030002" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_021-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://gundam_rx78_description/meshes/rx78_object_021-lib.dae" scale="0.1 0.1 0.1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rleg_ankle_p_mimic" type="revolute">
+    <origin xyz="3e-08 1e-08 0.0" rpy="0.0 -9.99999997475e-07 0.0" />
+    <axis xyz="1 0 0" />
+    <parent link="rx78_Null_089_link" />
+    <child link="rx78_Null_030_link" />
+    <limit effort="1000000000" lower="-0.523598775598" upper="0.523598775598" velocity="1000000" />
+    <dynamics damping="0.0" friction="0.0" />
+    <mimic joint="rleg_ankle_p" multiplier="-0.5" />
+  </joint>
+  <gazebo reference="torso_waist_y">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="torso_waist_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="torso_waist_y">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="torso_waist_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="torso_waist_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="torso_waist_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="torso_waist_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="torso_waist_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="torso_waist_p2">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="torso_waist_p2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="torso_waist_p2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="torso_waist_p2_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="head_neck_y">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="head_neck_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="head_neck_y">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="head_neck_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="head_neck_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="head_neck_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="head_neck_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="head_neck_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="torso_rthrust_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="torso_rthrust_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="torso_rthrust_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="torso_rthrust_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="torso_rthrust_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="torso_rthrust_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="torso_rthrust_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="torso_rthrust_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="torso_lthrust_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="torso_lthrust_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="torso_lthrust_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="torso_lthrust_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="torso_lthrust_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="torso_lthrust_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="torso_lthrust_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="torso_lthrust_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_shoulder_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_shoulder_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_shoulder_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_shoulder_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_shoulder_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_shoulder_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_shoulder_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_shoulder_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_shoulder_y">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_shoulder_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_shoulder_y">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_shoulder_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_elbow_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_elbow_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_elbow_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_elbow_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_elbow_p2">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_elbow_p2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_elbow_p2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_elbow_p2_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_wrist_y">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_wrist_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_wrist_y">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_wrist_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_wrist_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_wrist_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_wrist_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_wrist_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_middle0_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_middle0_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_middle0_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_middle0_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_middle1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_middle1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_middle1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_middle1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_middle2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_middle2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_middle2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_middle2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_ring0_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_ring0_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_ring0_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_ring0_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_ring1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_ring1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_ring1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_ring1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_ring2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_ring2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_ring2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_ring2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_little0_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_little0_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_little0_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_little0_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_little1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_little1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_little1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_little1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_little2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_little2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_little2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_little2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_index0_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_index0_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_index0_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_index0_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_index1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_index1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_index1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_index1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_index2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_index2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_index2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_index2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_thumb1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_thumb1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_thumb1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_thumb1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="larm_gripper_thumb2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="larm_gripper_thumb2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="larm_gripper_thumb2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="larm_gripper_thumb2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_shoulder_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_shoulder_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_shoulder_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_shoulder_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_shoulder_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_shoulder_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_shoulder_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_shoulder_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_shoulder_y">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_shoulder_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_shoulder_y">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_shoulder_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_elbow_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_elbow_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_elbow_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_elbow_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_elbow_p2">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_elbow_p2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_elbow_p2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_elbow_p2_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_wrist_y">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_wrist_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_wrist_y">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_wrist_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_wrist_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_wrist_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_wrist_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_wrist_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_thumb1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_thumb1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_thumb1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_thumb1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_thumb2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_thumb2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_thumb2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_thumb2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_middle0_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_middle0_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_middle0_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_middle0_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_middle1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_middle1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_middle1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_middle1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_middle2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_middle2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_middle2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_middle2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_index0_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_index0_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_index0_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_index0_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_index1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_index1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_index1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_index1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_index2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_index2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_index2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_index2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_little0_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_little0_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_little0_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_little0_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_little1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_little1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_little1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_little1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_little2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_little2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_little2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_little2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_ring0_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_ring0_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_ring0_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_ring0_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_ring1_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_ring1_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_ring1_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_ring1_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rarm_gripper_ring2_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rarm_gripper_ring2_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rarm_gripper_ring2_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rarm_gripper_ring2_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_crotch_p_front_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_crotch_p_front_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_crotch_p_front_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_crotch_p_front_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_crotch_p_back_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_crotch_p_back_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_crotch_p_back_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_crotch_p_back_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_crotch_r_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_crotch_r_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_crotch_r_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_crotch_r_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_crotch_p_back_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_crotch_p_back_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_crotch_p_back_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_crotch_p_back_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_crotch_p_front_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_crotch_p_front_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_crotch_p_front_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_crotch_p_front_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_crotch_r_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_crotch_r_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_crotch_r_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_crotch_r_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_crotch_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_crotch_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_crotch_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_crotch_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_crotch_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_crotch_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_crotch_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_crotch_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_crotch_y">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_crotch_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_crotch_y">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_crotch_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_knee_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_knee_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_knee_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_knee_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_knee_p2">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_knee_p2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_knee_p2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_knee_p2_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_ankle_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_ankle_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_ankle_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_ankle_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_ankle_r_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_ankle_r_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_ankle_r_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_ankle_r_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_ankle_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_ankle_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_ankle_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_ankle_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="lleg_ankle_p_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="lleg_ankle_p_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="lleg_ankle_p_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="lleg_ankle_p_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_crotch_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_crotch_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_crotch_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_crotch_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_crotch_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_crotch_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_crotch_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_crotch_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_crotch_y">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_crotch_y_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_crotch_y">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_crotch_y_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_knee_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_knee_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_knee_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_knee_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_knee_p2">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_knee_p2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_knee_p2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_knee_p2_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_ankle_p">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_ankle_p_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_ankle_p">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_ankle_p_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_ankle_r_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_ankle_r_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_ankle_r_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_ankle_r_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_ankle_r">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_ankle_r_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_ankle_r">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_ankle_r_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="rleg_ankle_p_mimic">
+    <provideFeedback>1</provideFeedback>
+    <implicitSpringDamper>0</implicitSpringDamper>
+  </gazebo>
+  <transmission name="rleg_ankle_p_mimic_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rleg_ankle_p_mimic">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rleg_ankle_p_mimic_motor">
+      <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo reference="base_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_018_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_017_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_016_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_015_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_014_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_013_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_012_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_011_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_010_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_009_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_007_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_008_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_005_addition_null0_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_005_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_006_addition_null0_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_006_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_004_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_001_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_002_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_003_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_066_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_067_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_069_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_068_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_070_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_071_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_072_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_073_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_074_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_075_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_076_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_077_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_059_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_060_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_061_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_062_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_063_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_064_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_065_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_048_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_049_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_050_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_051_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_052_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_053_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_054_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_055_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_056_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_057_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_058_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_021_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_022_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_023_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_024_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_025_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_026_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_027_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_028_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_029_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_078_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_079_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_080_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_081_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_082_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_083_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_084_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_031_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_032_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_033_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_034_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_047_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_035_addition_null0_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_035_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_036_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_037_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_038_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_039_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_040_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_041_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_042_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_043_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_044_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_045_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_046_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_085_addition_null0_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_085_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_086_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_087_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_088_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_089_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_090_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_091_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_092_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_093_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_094_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_095_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo reference="rx78_Null_030_link">
+    <selfCollide>false</selfCollide>
+    <mu1>1.5</mu1>
+    <mu2>1.5</mu2>
+    <mu2>9000</mu2>
+    <kp>140000000.0</kp>
+    <kd>280000.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <maxVel>10.0</maxVel>
+  </gazebo>
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+      <robotNamespace>/</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+    <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
+      <frameName>world</frameName>
+      <bodyName>base_link</bodyName>
+      <topicName>base_link_ground_truth</topicName>
+      <updateRate>30.0</updateRate>
+    </plugin>
+  </gazebo>
+</robot>
